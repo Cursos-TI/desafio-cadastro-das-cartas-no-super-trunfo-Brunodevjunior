@@ -1,22 +1,49 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+
+    print ("JOGO SUPER TRUNFO");
+    char estado[100]; /*%s*/ /*string*/
+    char cidade[100]; /*%s*/ /*string*/
+
+    int codigocartas;/*%d*/ 
+    int populacao;  /*%d*/
+    int quilometrosquadrados; /*%d*/
+    int pontosturisticos;/*%d*/
+
+    int pib;/*%d*/
+
+    printf("Qual estado\n");
+    scanf("%s" ,estado); 
+
+    printf("Qual é a cidade\n");
+    scanf("%s" ,cidade);
+
+    printf("Qual é o código da carta\n");
+    scanf("%d"  ,codigocartas);
+
+    printf("Qual é a população\n");
+    scanf("%d"  ,populacao);
+
+    printf("Quantos quilometros quadrados\n");
+    scanf("%d" ,quilometrosquadrados);
+
+    printf("Qual é o pib\n");
+    scanf("%d" ,pib);
+
+    printf("Quantos pontos turisticos\n");
+    scanf("%d" ,pontosturisticos);
+
+
+
+    printf ("estado é : %s\n - A cidade é : %s\n",estado,cidade);
+    printf("O código da cartá é :%d\n" ,codigocartas);
+    printf ("A população é :%d\n" ,populacao);
+    printf("Quilometros quadrados : %d\n" ,quilometrosquadrados);
+    printf ("Pontos turísticos :%d\n" ,pontosturisticos);
+    printf("O Pib é : %d\n" ,pib);
+
 
     return 0;
 }
