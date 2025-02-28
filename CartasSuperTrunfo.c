@@ -3,7 +3,7 @@
 
 int main() {
 
-    print ("JOGO SUPER TRUNFO");
+    printf ("JOGO SUPER TRUNFO\n");
     char estado[100]; /*%s*/ /*string*/
     char cidade[100]; /*%s*/ /*string*/
 
@@ -21,19 +21,19 @@ int main() {
     scanf("%s" ,cidade);
 
     printf("Qual é o código da carta\n");
-    scanf("%d"  ,codigocartas);
+    scanf("%d"  ,&codigocartas);
 
     printf("Qual é a população\n");
-    scanf("%d"  ,populacao);
+    scanf("%d"  ,&populacao);
 
     printf("Quantos quilometros quadrados\n");
-    scanf("%d" ,quilometrosquadrados);
+    scanf("%d" ,&quilometrosquadrados);
 
     printf("Qual é o pib\n");
-    scanf("%d" ,pib);
+    scanf("%d",&pib);
 
     printf("Quantos pontos turisticos\n");
-    scanf("%d" ,pontosturisticos);
+    scanf("%d" ,&pontosturisticos);
 
 
 
@@ -42,7 +42,7 @@ int main() {
     printf ("A população é :%d\n" ,populacao);
     printf("Quilometros quadrados : %d\n" ,quilometrosquadrados);
     printf ("Pontos turísticos :%d\n" ,pontosturisticos);
-    printf("O Pib é : %d\n" ,pib);
+    printf("O Pib é : %d\n",pib);
 
 
     return 0;
